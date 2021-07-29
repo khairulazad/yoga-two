@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Primary color #343148 */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body p{
+    letter-spacing: 1px;
+    margin: 14px 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    z-index: 40;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 4%, 60%);
+    padding-left: 20px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.logo h2{
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sh_ul ul li{
+    list-style: none;
+    margin: 10px 6px 0 6px;
+}
+
+.sh_ul ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    transition: 0.3s ease-out;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.sh_ul ul li a:hover{
+    background-color: #ddd;
+    color: #333;
+}
+
+input{
+    display: none;
+}
+
+label{
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Hero Section */ 
+/*
+.hero-both{
+    display: flex;
+    align-items: center;
+}
+
+*/
+
+.header{
+    padding: 30px 0;
+    background-color: #F7CAC9;
+}
+
+.hero-caption{
+    color: #343148;
+   
+}
+
+
+.hero-both {
+    display: flex;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+
+.hero-caption h1{
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.smBtn{
+    background-color: #343148;
+    color: #F7CAC9;
+    outline: none;
+    /*font-size: 16px; */
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    letter-spacing: 1px;
+    /*padding: 10px 13px;*/
+    padding: 0.6rem 0.8rem;
+    transition: all 0.5s;
+}
+
+.btnleft{
+    margin-right: 10px;
+}
+
+.smBtn:hover{
+    color: #343148;
+    background-color: #fff;
+}
+
+.heroPic img{
+    width: 90%;
+}
+
+/* Welcome Section */
+
+.welcome{
+    
+    padding: 40px 0;
+}
+
+.posetext{
+    display: flex;
+    margin-left: 0;
+    margin-right: 0 ;
+    align-items: center;
+}
+
+.posetext img{
+
+    width: 100%;
+}
+
+.posetext .align-items{
+    display: flex;
+    align-items: center;
+}
+
+.posetext .caption h4{
+    font-weight: 600;
+    color: rgb(129, 99, 99);
+    position: relative;
+    margin-left: 7.8%;
+}
+
+.before-after::after{
+    content: "";
+    position: absolute;
+    width: 6%;
+    height: 2px;
+    background-color: rgb(129, 99, 99);
+    top: 50%;
+    left: 25%;
+}
+
+.before-after::before{
+    content: "";
+    position: absolute;
+    width: 6%;
+    height: 2px;
+    background-color: rgb(129, 99, 99);
+    top: 50%;
+    left: -8.6%;
+}
+
+.secondary-heading{
+    font-size: 2.8rem;
+    color: #343148;
+    font-weight: 600;
+
+}
+
+.btn2:hover{
+
+    background-color: palevioletred;
+    color: #343148;
+}
+
+.posetext .caption p{
+    color: #3b365a;
+}
+
+
+
+/* Animation Section Starts */
+
+.animation-mid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.animation-mid .single-box{
+    width: 30%;
+  
+    padding: 2rem 1rem;
+    margin: 3rem 0;
+
+    box-shadow: 2px 2px 16px rgb(168, 167, 167);
+}
+
+/*
+
+.animation-mid .single-box img{
+    width: 30%;
+    background-color: #FE1;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+
+*/
+
+
+.animation-mid .single-box .pic{
+    width: 28%;
+    
+    margin: 0 auto;
+    background-color: #FE1;
+    border-radius: 100%;
+    animation-name: khairul;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+
+
+.animation-mid .single-box .pic img{
+    width: 80%;
+    padding: 10px 3px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+@keyframes khairul{
+    0%{
+        box-shadow: 2px 5px 7px grey;
+    }
+
+    20%{
+        box-shadow: 4px 7px 10px grey;
+    }
+
+    40%{
+        box-shadow: 6px 9px 12px grey;
+    }
+
+    60%{
+        box-shadow: 8px 12px 14px grey;
+    }
+
+    80%{
+        box-shadow: 4px 7px 15px grey;
+    }
+
+    100%{
+        box-shadow: 4px 10px 14px grey;
+    }
+}
+
+
+/* Animation Section Ends */
+
+
+
+
+/* Discount Section Starts */
+
+.discount{
+    background-color: rgb(232, 214, 203);
+    position: relative;
+    z-index: 2;
+   
+} 
+
+.discount-mid{
+    margin: 80px 0;
+}
+
+.discount-mid p{
+    margin: 30px 0
+}
+
+.discount::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-image: url(../images/discount-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: contain;
+    background-attachment: fixed;
+    z-index: -2;
+    opacity: 0.3;
+   
+}
+
+
+.second-bf{
+    position: relative;
+}
+
+#seperrate_bf::after, #seperrate_bf::before{
+
+    height: 1.9px;
+
+}
+
+
+#seperrate_bf::before{
+
+    height: 2px;
+}
+
+.second-bf::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(129, 99, 99);
+    top: 51%;
+    left: 38%;
+    right: 0;
+}
+
+.second-bf::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(129, 99, 99);
+    top: 50%;
+    left: 58%;
+}
+
+.discount-mid{
+    padding: 0 20%;
+    
+}
+
+.discount-mid h2 span{
+    color: red;
+}
+
+
+/* Price Plan */
+
+#pricetop_content {
+    margin-top: 4rem;
+}
+
+.price-both {
+    margin: 3rem 0;
+}
+
+.sub-list{
+    border: 1px solid #ddd;
+    padding: 2rem 0;
+}
+
+.bold-price {
+    padding: 2rem 0;
+    background-color: rgb(161, 41, 161);
+    color: rgb(255, 255, 255);
+}
+
+.bold-price h2 {
+    font-size: 1.6rem;
+}
+
+.bold-price h1 {
+    font-size: 2rem;
+}
+
+.bold-price span {
+    font-size: 1.1rem;
+}
+
+.price-both .sub-list li {
+    list-style: none;
+    font-size: 16px;
+}
+
+.price-both .sub-list button {
+    margin-top: 2.6rem;
+}
+
+.sub-list hr {
+    margin: 1rem 0;
+}
+
+.btn3:hover{
+    background-color: rgb(129, 99, 99);
+    color: #fff;
+}
+
+/* Testimonial Section Starts */
+
+.my-item{
+    border: 1px solid rgb(240, 221, 221);
+    padding-left: 2%;
+    padding-right: 3%;
+    color: rgb(88, 82, 82);
+    position: relative;
+    padding-top: 3.6rem;
+    margin-top: 4rem;
+}
+
+.my-item:hover{
+    background-color: rgb(105, 10, 105);
+    transition: all 0.7s ease;
+    color: rgb(238, 216, 216);
+}
+
+.my-item img {
+     width: 100px !important;
+     margin: 0 auto;
+     border-radius: 100%;
+     background-color: #fff;
+     border: 1px solid rgb(175, 155, 155);
+     padding: 14px 12.3px;
+}
+
+.my-item p{
+    margin: 1.3rem 0;
+}
+
+
+.my-item .pic {
+    left: 37%;
+    top: -16% !important;
+    
+    position: absolute;
+    z-index: 30 !important;
+}
+
+
+
+/* Testimonial Section Ends */
+
+/* Team Section Starts */
+
+.team-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.7rem;
+}
+
+.box{
+    width: 21%;
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
+}
+
+.box::before,
+.box::after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.6s;
+}
+
+.box::before{
+    bottom: 5%;
+    left: 5%;
+    border-bottom: 1.5px solid #fff;
+    border-left: 1.5px solid #fff;
+}
+
+.box::after{
+    top: 5%;
+    right: 5%;
+    border-top: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+}
+
+.box:hover:before,
+.box:hover:after{
+    opacity: 1;
+    width: 90%;
+    height: 90%;
+}
+
+.box img{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.box:hover img{
+    transform: scale(1.08);
+    transition-duration: 0.5s;
+}
+/*
+
+.box:hover {
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+}
+*/
+.box .box-content {
+position: absolute;
+left: 0%;
+width: 100%;
+color: #fff;
+bottom: 10%;
+top: 0;
+height: 100%;
+background-color: hsla(0, 6%, 15%, 0.5);
+/* background-color: rgba(0,0,0,0.8); */
+}
+
+.box .name{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.box .status{
+    font-weight: 500;
+}
+
+.box .name, .box .status {
+    /* display: block; */
+    position: absolute;
+    bottom: 7%;
+    text-align: center;
+    left: 0%;
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.box .status{
+    opacity: 0;
+}
+
+.box:hover .status{
+    opacity: 1;
+}
+
+.box:hover .name{
+    opacity: 0;
+}
+
+
+/* Team Section Ends */ 
+
+
+/* Footer Starts */
+
+.footer{
+    width: 100%;
+    color: #fff;
+    position: relative;
+    background-color: #2F2C41;
+    z-index: 3;
+    padding-bottom: 1rem;
+   
+}
+
+.footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-image: url(../images/discount-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+    z-index: -3;
+    opacity: 0.3;
+
+}
+
+.footer-mid h1{
+    color: hsl(0, 0%, 100%,);
+    margin: 1.7rem 0;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.footer-mid{
+   
+    margin: 2rem 0;
+}
+
+.footer-mid h4{
+    margin: 1rem 0;
+}
+
+
+.footer .fa{
+    color: #fff;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    margin: 0.4rem;
+}
+
+.footer hr{
+    border: 0;
+    border-bottom: 1px solid rgb(151, 130, 130);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+
+    .posetext .caption h4 {
+       
+        margin-left: 0%;
+    }
+
+    .before-after::after {
+        display: none !important;
+        left: 30%;
+    }
+
+    .before-after::before {
+        display: none !important;
+        left: 30%;
+    }
+
+    .second-bf::after {
+        display: none !important;
+        height: 2.5px;
+       
+    }
+
+    .second-bf::before {
+        display: none !important;
+        height: 2.5px;
+       
+    }
+
+    #seperrate_bf::after {
+        display: none !important;
+        height: 2.5px;
+    }
+
+    #seperrate_bf::before {
+        display: none !important;
+        height: 2.5px;
+    }
+ 
+}
+
+
+@media (max-width: 1040px){
+
+    .animation-mid .single-box .pic {
+        width: 37%;
+      
+    }
+}
+
+@media (max-width: 992px){
+
+    .discount-mid {
+        padding: 0 10%;
+    }
+
+    #copy_right p{
+
+        text-align: center;
+    }
+
+    .team-section {
+       flex-wrap: wrap;
+    }
+
+    .box {
+        width: 46%;
+       
+        margin-top: 13px;
+        margin-bottom: 13px;
+       
+    }
+}
+
+
+
+
+@media (max-width: 850px){
+
+    nav{
+        position: relative;
+    }
+
+    .sh_ul {
+        
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        z-index: 40;
+        width: 100%;
+        background-color: purple;
+        transition: all 0.8s;
+    }   
+
+    label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    input:checked ~ .sh_ul{
+        left: 0%;
+
+    }
+
+    input:checked ~ label::before{
+        content:'\f00d';
+    }
+
+    .sh_ul ul li{
+        margin: 5px 0;
+    }
+
+    .sh_ul ul li a{
+        display: block;
+    }
+    
+
+    .sh_ul ul {
+        display: block;
+        text-align: center;
+    }
+
+    .animation-mid .single-box {
+        width: 32%;
+       
+    }
+
+   
+}
+
+@media (max-width: 770px){
+    .secondary-heading {
+        font-size: 2.4rem;
+        
+    }
+}
+
+
+@media (max-width: 768px){
+    .hero-both {
+       flex-wrap: wrap;
+    }
+
+    .hero-caption {
+        
+        margin-bottom: 3.5rem;
+    }
+
+    .posetext{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+       
+    }
+
+    .animation-mid {
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    .animation-mid .single-box {
+        width: 85%;
+        margin: 0.9rem;
+    }
+
+    .animation-mid .single-box .pic {
+        width: 20%;
+    }
+    
+}
+
+@media (max-width: 550px){
+
+    .animation-mid .single-box .pic {
+        width: 30%;
+    }
+
+    .hero-caption h1 {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 450px){
+
+   html{
+       font-size: 13px;
+   }
+
+   .animation-mid .single-box .pic {
+    width: 35%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+}
+
